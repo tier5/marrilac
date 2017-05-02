@@ -1,0 +1,260 @@
+@font-face {
+    font-family:'OpenSans-Regular';
+    src:url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'OpenSans-Light';
+    src:url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'OpenSans-Semibold';
+    src:url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'OpenSans-Bold';
+    src:url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+body{
+    font-family:'OpenSans-Regular';
+    color: #666;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.clear{
+    display: inline-block;
+    width: 100%;
+    clear: both;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+header{
+    background: #217ecc;
+}
+
+.top-header{
+    color: #fff;
+    vertical-align: top;
+    padding: 10px 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.top-header p{
+    margin: 0;
+}
+
+.top-header a{
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.language-box{
+    display: inline-block;
+}
+
+.language-box select{
+    background: none;
+    border: none;
+}
+
+.language-box select option{
+    background: #666;
+} 
+
+.language-box select:focus{
+    outline: none;
+}
+
+.main-header{
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: 1px 1px 1px 1px #eee;
+    padding: 10px 15px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #217ecc;
+    background: none;
+}
+
+.main-header .navbar-default{
+    background: none;
+    border: none;
+    margin: 0;
+}
+
+a.appo-link{
+    background: #217ecc;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 7px;
+}
+
+a.appo-link i{
+    margin-right: 5px;
+}
+
+#navigation-bar {
+    position: relative;
+    height: 60px;
+    padding-left: 60px;
+}
+#search {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: -60px;
+}
+#label {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 20;
+}
+#label label {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #000;
+    cursor: pointer;
+}
+#label label:hover {
+    background: url("../img/search.png") -60px 0
+}
+#label.active label {
+    background: url("../img/search.png") -60px 0
+}
+#input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 60px;
+    z-index: 5;
+    overflow: hidden;
+}
+#input input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -450px;
+    width: 450px;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+    background-color: #23688b;
+    color: #fff;
+    font-size: 18px;
+    -webkit-backface-visibility: none;
+    -moz-backface-visibility: none;
+    -ms-backface-visibility: none;
+    backface-visibility: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: left 0;
+    -moz-transition: left 0;
+    -ms-transition: left 0;
+    -o-transition: left 0;
+    transition: left 0;
+}
+#input input:focus {
+    outline: none
+}
+#input.focus {
+    z-index: 20
+}
+#input.focus input {
+    left: 0;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+}
+
+section{
+    padding: 100px 0;
+}
+
+section.banner{
+    padding: 0;
+}
+
+.welcome-txt h3{
+    font-family: 'OpenSans-Semibold';
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.welcome-txt h3 span{
+    color: #217ecc;
+}
+
+.welcome-txt p{
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.welcome-txt ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.welcome-txt ul li{
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    background: url('../images/small-arrow.png') no-repeat left;
+    padding-left: 30px;
+}
+
+.department{
+    margin: 50px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.department h4 {
+    font-family: 'OpenSans-Bold';
+    color: #333;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.department h4 img{
+    display: inline-block;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+}
+
+@media screen and (max-width: 767px){
+}
