@@ -7,11 +7,16 @@
 <title>Marrilac</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link href="css/flexisel.css" rel="stylesheet">
+<link href="css/full-slider.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 </head>
 <body>
 <!-- Header Start -->
@@ -60,6 +65,7 @@
 						        <li><a href="#">Donate</a></li>
 						        <li><a href="#">Contact</a></li>
 						        <li><a href="#">Patient Portal</a></li>
+						        <li><a href="#" style="color: #000;"> <i class="fa fa-search" aria-hidden="true"></i></a></li>
 						        <!-- <li>
 								    <form id="search" action="#" method="post">
 						                <div id="label"><label for="search-terms" id="search-label">
@@ -84,13 +90,61 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
-					<img src="images/banner_img.jpg" class="img-responsive">
+				    <div id="myCarousel" class="carousel slide">
+				        <div class="carousel-inner">
+				            <div class="item active">
+				                <div class="fill" style="background-image:url('images/banner_img.jpg');"></div>
+				                <div class="carousel-caption">
+				                    <h1>lorem dels</h1>
+				                    <h2>lorem ipsume</h2>
+				                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				                    <ul>
+				                    	<li><a href="#">learn more</a></li>
+				                    	<li><a href="#">get started</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="fill" style="background-image:url('images/banner_img.jpg');"></div>
+				                <div class="carousel-caption">
+				                    <h1>lorem dels</h1>
+				                    <h2>lorem ipsume</h2>
+				                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				                    <ul>
+				                    	<li><a href="#">learn more</a></li>
+				                    	<li><a href="#">get started</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="fill" style="background-image:url('images/banner_img.jpg');"></div>
+				                <div class="carousel-caption">
+				                    <h1>lorem dels</h1>
+				                    <h2>lorem ipsume</h2>
+				                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				                    <ul>
+				                    	<li><a href="#">learn more</a></li>
+				                    	<li><a href="#">get started</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+				        </div>
+
+				        <!-- Controls -->
+				        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				            <img src="images/hdr_arrow.png" class="img-responsive">
+				        </a>
+				        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				            <img src="images/hdr_arrow2.png" class="img-responsive">
+				        </a>
+
+				    </div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section>
+<section class="welcome">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
@@ -150,13 +204,423 @@
 		</div>
 	</div>
 </section>
-<footer>
+<section class="special-activity">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
+				<img src="images/2.jpg" class="img-responsive">
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h3>special activities</h3>
+				<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				<div id="accordion">
+				  <h3>palliative care <span class="timing">10 am - 11 pm</span></h3>
+				  <div>
+				    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in.</p>
+				  </div>
+				  <h3>lorem ipsum <span class="timing">10 am - 11 pm</span></h3>
+				  <div>
+				    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="our-dept">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>our department</h3>
+				<ul id="flexiselDemo3">
+				    <li>
+				    	<img src="images/3.jpg" class="img-responsive"/>
+				    	<div class="dept-details">
+				    		<img src="images/neurologist-icon.png" class="img-responsive">
+				    		<span class="specialist">Neurologist</span>
+				    		<ul>
+				    			<li>doctor<span class="count">(10)</span></li>
+				    			<li>patient<span class="count">(20)</span></li>
+				    		</ul>
+				    	</div>
+				    </li>
+				    <li>
+				    	<img src="images/4.jpg" class="img-responsive"/>
+				    	<div class="dept-details">
+				    		<img src="images/neurologist-icon.png" class="img-responsive">
+				    		<span class="specialist">Neurologist</span>
+				    		<ul>
+				    			<li>doctor<span class="count">(10)</span></li>
+				    			<li>patient<span class="count">(20)</span></li>
+				    		</ul>
+				    	</div>
+				    </li>
+				    <li>
+				    	<img src="images/5.jpg" class="img-responsive"/>
+				    	<div class="dept-details">
+				    		<img src="images/neurologist-icon.png" class="img-responsive">
+				    		<span class="specialist">Neurologist</span>
+				    		<ul>
+				    			<li>doctor<span class="count">(10)</span></li>
+				    			<li>patient<span class="count">(20)</span></li>
+				    		</ul>
+				    	</div>
+				    </li>
+				    <li>
+				    	<img src="images/6.jpg" class="img-responsive"/>
+				    	<div class="dept-details">
+				    		<img src="images/neurologist-icon.png" class="img-responsive">
+				    		<span class="specialist">Neurologist</span>
+				    		<ul>
+				    			<li>doctor<span class="count">(10)</span></li>
+				    			<li>patient<span class="count">(20)</span></li>
+				    		</ul>
+				    	</div>
+				    </li>       
+				</ul> 
+			</div>
+		</div>
+	</div>
+</section>
+<section class="make-appointment">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Lorem Ipsum</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+			</div>
+			<div class="col-md-6">
+				<h3>Make an appointment</h3>
+				<div class="appointment-form">
+					<form>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" name="name" placeholder="Name" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="email" name="email" placeholder="Email" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<select class="form-control">
+										<option>Subject</option>
+										<option>Lorem Ipsum</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<select class="form-control">
+										<option>Subject</option>
+										<option>Lorem Ipsum</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea class="form-control" placeholder="Message" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6"></div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="submit" name="submit" value="Send" class="form-control">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="testimonial">
+	<div class="container-fluid">
+		<div class="row">
+	        <div id="tcb-testimonial-carousel" class="carousel slide" data-ride="carousel">
+	            <!-- Wrapper for slides -->
+	            <div class="carousel-inner">
+	                <div class="item active">
+	                    <div class="row">
+                           	<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic1.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+                           	<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic2.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+							<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic3.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+                           	<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic4.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+	                    </div>
+	                </div>
+	                <div class="item">
+	                    <div class="row">
+                           	<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic1.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+                           	<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic2.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+							<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic3.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+                           	<div class="col-md-3 col-sm-3">
+                           		<img class="img-responsive" src="images/face_pic4.jpg">
+                           		<div class="box text-center">
+                           			<span class="name">kevin smith</span>
+                           			<span class="designation">Pediatrics student</span>
+                           			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 1500s.</p>
+                           		</div>
+                           	</div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+	</div>
+</section>
+<section class="news">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="text-center">Latest News</h3>
+				<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+				<div class="col-md-4 col-md-4">
+					<div class="image">
+						<img src="images/8.jpg" class="img-responsive">
+						<div class="attributes">
+							<ul>
+								<li><i class="fa fa-comment-o" aria-hidden="true"></i> 30</li>
+								<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 90</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box">
+						<span class="date"><strong>13</strong> Jan</span>
+						<a href="#" class="heading">we accept your health insurance</a>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-4">
+					<div class="image">
+						<img src="images/10.jpg" class="img-responsive">
+						<div class="attributes">
+							<ul>
+								<li><i class="fa fa-comment-o" aria-hidden="true"></i> 30</li>
+								<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 90</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box">
+						<span class="date"><strong>13</strong> Jan</span>
+						<a href="#" class="heading">we accept your health insurance</a>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-4">
+					<div class="image">
+						<img src="images/11.jpg" class="img-responsive">
+						<div class="attributes">
+							<ul>
+								<li><i class="fa fa-comment-o" aria-hidden="true"></i> 30</li>
+								<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 90</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box">
+						<span class="date"><strong>13</strong> Jan</span>
+						<a href="#" class="heading">we accept your health insurance</a	>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="newsletter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 col-sm-6">
+				<h3>newsletter</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+			</div>
+			<div class="col-md-5 col-sm-6">
+				<form>
+					<div class="form-group">
+						<input type="email" name="email" placeholder="Enter your email here" class="col-md-8 col-sm-8">
+						<input type="submit" value="" class="col-md-4 col-sm-4">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contact text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h3>get in touch</h3>
+				<form>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Name"  class="form-control">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Email"  class="form-control">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Subject</option>
+									<option>Lorem Ipsum</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="form-group">
+								<textarea class="form-control" rows="8" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="submit" name="submit" value="send"  class="form-control">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3">
+				<h3>about</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<h3>service</h3>
+				<ul>
+					<li><a href="#">Neurology</a></li>
+					<li><a href="#">Diabetis</a></li>
+					<li><a href="#">Health & Fitness</a></li>
+					<li><a href="#">Spine</a></li>
+					<li><a href="#">Brainstrom</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<h3>news and media</h3>
+				<ul>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contents</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Services</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<h3>contact us</h3>
+				<strong>by St. Marry's Hospital:</strong>
+				<p>2333 N 6th St, Grand Junction, CO 81501 - 970-298-1782</p>
+				<strong>Mesa County Health Dept:</strong>
+				<p>510 29 1/2 Rd, Grand Junction, CO 81504 - 970 -298-1782</p>
+				<ul class="social">
+					<li><a href="#"><img src="images/insta-icon.png" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/twitter-icon.png" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/fb-icon.png" class="img-responsive"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<p class="copyright">Marrilac 2017 &copy; All rights reserved.</p>
 			</div>
 		</div>
 	</div>
 </footer>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      heightStyle: "content"
+    });
+  } );
+</script>
+<script type="text/javascript">
+	$(window).load(function() {
+		$("#flexiselDemo3").flexisel({
+        visibleItems: 4,
+        itemsToScroll: 4,         
+	        autoPlay: {
+	            enable: true,
+	            interval: 5000,
+	            pauseOnHover: true
+	        }        
+	    });
+	});
+</script>
+<script>
+    $('#myCarousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 </body>
 </html>
