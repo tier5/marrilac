@@ -108,7 +108,7 @@ h6 {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #CC3333;
+  color: #fff;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
@@ -142,9 +142,34 @@ padding: 0 7px 0 0; background-color: transparent;
 
 .navbar-toggle{padding: 6px 7px;}
 
+header.inner-header{background: #131313;}
+.inner-header nav.affix{position: relative;}
 
-@media (min-width: 768px) {
-  .navbar-custom {
+.inner-header .top-part{position: relative;}
+.inner-header .navbar-custom{padding: 20px 0 0;}
+
+.innerbody{padding-top: 20px;}
+h1.inner-heading{font-weight: 700; font-size: 40px; text-transform: uppercase;
+margin: 0; padding: 0; color: #000; position: relative;}
+h1.inner-heading:after{position: absolute; content: ''; width: 86px; height: 6px;
+background: #009999; left: 0; bottom: -14px;}
+
+.historypage h1{margin-bottom: 60px;}
+.historypage h2{color: #009999; font-weight: normal; font-size: 25px; text-transform: capitalize;
+margin-bottom: 25px;}
+.historypage p{color: #929292;}
+.history-banner{padding-bottom: 65px;}
+
+.about{background: url(../images/History_page2.jpg) no-repeat center top #27717A;
+height: 338px; background-size: 100% 100%;}
+.about h2{color: #fff; font-size: 38px; position: relative; margin-bottom: 30px;}
+.about h2:after{position: absolute; content: ''; width: 86px; height: 6px; background: #1FC9C9;
+left: 0; bottom: -14px;}
+.about p{color: #fff;}
+.about a{background: #CD3333; border-radius: 30px; color: #fff; text-decoration: none;
+padding: 8px 25px; display: inline-block; margin-top: 15px; font-size: 11px; text-transform: uppercase;}
+
+ .navbar-custom {
     background-color: transparent;
     padding: 71px 0 0;
     -webkit-transition: padding 0.3s;
@@ -152,6 +177,17 @@ padding: 0 7px 0 0; background-color: transparent;
     transition: padding 0.3s;
     border: none;
   }
+
+
+@media (min-width: 768px) {
+ /* .navbar-custom {
+    background-color: transparent;
+    padding: 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }*/
   .navbar-custom .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
@@ -247,7 +283,8 @@ body {
 
 .make-appointment{float: right; margin-left: 45px;}
 .make-appointment a{background: #CC3333; padding: 5px 25px; border-radius: 30px; color: #fff;
-text-decoration: none; text-transform: uppercase; font-size: 12px;}
+text-decoration: none; text-transform: uppercase; font-size: 12px; display: inline-block;
+margin-top: 2px;}
 
 
 .container{width: 1201px;}
@@ -418,6 +455,14 @@ font-size: 17px;}
 .social ul li a{color: #fff;}
 .copy-right{font-size: 13px; padding-top: 25px; color: #7D7D7D;}
 
+.navbar-right .dropdown-menu {left: 0; right: auto; background: #009997;}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{background: #075859;
+color: #fff;}
+.navbar-nav > li > .dropdown-menu{border-bottom-left-radius:0; border-bottom-right-radius:0;}
+.dropdown-menu > li > a{font-size: 12px;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{color: #fff;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover
+{background: #075859; color: #fff;}
 
 
 
@@ -432,6 +477,7 @@ font-size: 17px;}
 @media screen and (max-width: 900px) {
 
 	.container{width: auto;}
+  .make-appointment a{padding: 5px 15px; font-size: 11px; margin-top: 4px;}
 
 
 }
@@ -459,6 +505,16 @@ font-size: 17px;}
 	.featured-service{text-align: center;}
 	.featured-txt{margin-bottom: 30px;}
 
+  .about{background-size: cover;}
+   .navbar-custom {
+    /*background-color: transparent;*/
+    padding: 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-right{margin-right: 0;}
 
 
 }
@@ -470,6 +526,9 @@ font-size: 17px;}
   .social{padding-bottom: 20px;}
   .navbar-nav{padding-top: 20px;}
   .make-appointment{margin-top: 14px;}
+ /* .dropdown-menu{float: none; position: relative;}*/
+
+ .inner-header .navbar-custom{padding-top: 0;}
 
 }
 
@@ -478,7 +537,8 @@ font-size: 17px;}
 @media screen and (max-width: 600px) {
 
 	.carousel-caption{top: 4%;}
-
+  .historypage h1 {font-size: 35px;}
+  .historypage h2{font-size: 20px;}
 
 }
 
@@ -493,6 +553,8 @@ font-size: 17px;}
 
   .latest-news .slick-prev{left: 42%;}
   .latest-news .slick-next{right: 42%;}
+  .historypage h1 {font-size: 25px; margin-bottom: 25px;}
+   .historypage h2{font-size: 17px; margin-bottom: 10px;}
 
 }
 
