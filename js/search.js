@@ -8,7 +8,6 @@
 	// get vars
 	var searchEl = document.querySelector("#input");
 	var labelEl = document.querySelector("#label");
-	console.log(labelEl);
 
 	// register clicks and toggle classes
 	labelEl.addEventListener("click",function(){
