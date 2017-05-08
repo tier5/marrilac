@@ -1197,6 +1197,45 @@ aside ul li.active a, aside ul li:hover a{
 .body-content.medical ul li span{
     font-family: 'OpenSans-Semibold';
 }
+
+.body-content.vision h4{
+    font-size: 22px;
+    background: url('../images/title_border.png') no-repeat bottom left;
+    padding-bottom: 10px;
+    font-family: 'OpenSans-Semibold';
+}
+
+.body-content.vision img{
+    margin: auto;
+}
+
+.body-content.vision a{
+    color: #232323;
+    font-size: 20px;
+    font-family: 'OpenSans-Semibold';
+    display: block;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.vision ul{
+    list-style-type: none;
+    padding: 0;
+    color: #232323;
+    font-size: 16px;
+}
+
+.vision ul li{
+    background: url(../images/circle_arrow.png) no-repeat top left;
+    line-height: 24px;
+    padding: 0 0 20px 30px;
+}
+.vision.care ul li{
+    background: url(../images/blue-icon.png) no-repeat top left;
+    vertical-align: top;
+    padding: 0 20px 30px;
+    line-height: 10px;
+}
 /* 
 ==============================
     Footer
@@ -1348,6 +1387,9 @@ footer p.copyright{
     .body-content.mvv .box img {
         height: 35px;
     }
+    .vision.care ul li{
+        line-height: 15px;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -1393,7 +1435,7 @@ footer p.copyright{
         margin-bottom: 20px;
     }
 
-    .welcome img,.special-activity img, .news .image img{
+    .welcome img,.special-activity img, .news .image img, .vision img{
         width: 100%;
     }
     .department h4 img{
@@ -1434,6 +1476,14 @@ footer p.copyright{
     }
     .body-content.bod p {
         margin: 20px 0;
+    }
+
+    .vision.care img{
+        width: auto;
+    }
+    .vision.care ul li {
+        line-height: 15px;
+        font-size: 13px;
     }
 }
 
