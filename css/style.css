@@ -1257,15 +1257,67 @@ aside ul li.active a, aside ul li:hover a{
     border: none;
     padding: 0;
     font-size: 28px;
+    margin-bottom: 10px
 }
 
 .body-content.donate h3 span{
-    
+    color: #217ecc;
+}
+
+.body-content.donate strong{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'OpenSans-Semibold';
+    display: block;
+}
+
+.body-content.donate h4{
+    font-family: 'OpenSans-Semibold';
+    color: #217ecc;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.dotted{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px dashed #ccc;
+    margin: 20px 0;
 }
 
 .donate form{
     border: 1px solid #ccc;
     padding: 40px;
+}
+
+.donate form label{
+    font-weight: normal;
+    font-size: 17px;
+    color: #999;
+}
+
+.donate form input{
+    border-radius: 0;
+    margin-bottom: 10px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.contactme{
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+.donate form input[type='submit']{
+    float: right;
+    background: #217ecc;
+    border: 1px solid #217ecc;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 20px;
 }
 
 /* 
@@ -1315,6 +1367,14 @@ footer p.copyright{
     Reponsive
 ==============================
 */
+@media screen and (min-width: 1425px){
+    .inner-banner h1 {
+        width: 65%;
+    }
+    .inner-banner h2 {
+        width: 40%;
+    }
+}
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
     .nav>li>a {
