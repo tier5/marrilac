@@ -1241,6 +1241,17 @@ aside ul li.active a, aside ul li:hover a{
     font-size: 20px;
     line-height: 28px;
 }
+
+.patient ul{
+    padding-left: 20px;
+    color: #232323;
+    font-size: 16px;
+}
+
+.patient ul li{
+    padding: 10px 0;
+
+}
 /* 
 ==============================
     Footer
@@ -1501,6 +1512,10 @@ footer p.copyright{
     .vision.care ul li {
         line-height: 15px;
         font-size: 13px;
+    }
+    .body-content.patient h4 {
+        font-size: 15px;
+        line-height: 20px;
     }
     footer h3, footer p, footer ul,footer strong {
         text-align: center;
