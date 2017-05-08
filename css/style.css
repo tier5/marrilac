@@ -1236,6 +1236,11 @@ aside ul li.active a, aside ul li:hover a{
     padding: 0 20px 30px;
     line-height: 10px;
 }
+
+.body-content.patient h4{
+    font-size: 20px;
+    line-height: 28px;
+}
 /* 
 ==============================
     Footer
@@ -1390,6 +1395,17 @@ footer p.copyright{
     .vision.care ul li{
         line-height: 15px;
     }
+    .news .box a {
+        font-size: 12px;
+        margin-left: 0;
+    }
+    .news .box .date {
+        display: block;
+        padding: 5px;
+    }
+    .news .box .date strong {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -1440,6 +1456,7 @@ footer p.copyright{
     }
     .department h4 img{
         width: auto;
+        float: none;
     }
     .body-content{
         margin-top: 30px;
@@ -1484,6 +1501,10 @@ footer p.copyright{
     .vision.care ul li {
         line-height: 15px;
         font-size: 13px;
+    }
+    footer h3, footer p, footer ul,footer strong {
+        text-align: center;
+        display: block;
     }
 }
 
