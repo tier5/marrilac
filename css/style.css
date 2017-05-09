@@ -146,7 +146,7 @@ header.inner-header{background: #131313;}
 .inner-header nav.affix{position: relative;}
 
 .inner-header .top-part{position: relative;}
-.inner-header .navbar-custom{padding: 20px 0 0;}
+.inner-header .navbar-custom{padding: 20px 0 0;    margin-bottom: 0;}
 
 .innerbody{padding-top: 20px;}
 h1.inner-heading{font-weight: 700; font-size: 40px; text-transform: uppercase;
@@ -458,14 +458,140 @@ font-size: 17px;}
 .navbar-right .dropdown-menu {left: 0; right: auto; background: #009997;}
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{background: #075859;
 color: #fff;}
-.navbar-nav > li > .dropdown-menu{border-bottom-left-radius:0; border-bottom-right-radius:0;}
+.navbar-nav > li > .dropdown-menu{border-bottom-left-radius:0; border-bottom-right-radius:0;padding: 0;    border: 1px solid #009997;}
 .dropdown-menu > li > a{font-size: 12px;}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a{color: #fff;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{color: #fff;border-bottom: 1px solid #fff;}
+.navbar-default .navbar-nav .open .dropdown-menu li:last-child a{ border: none; }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover
 {background: #075859; color: #fff;}
 
+.providers img{
+  width: 100%;
+}
 
+.innerbody.providers {
+  padding-top: 0;
+}
 
+.whoweare{
+  background: #03a7a8;
+  color: #fff;
+  padding: 70px;
+}
+
+.whoweare h1{
+  background: url(../images/header-border.jpg) no-repeat bottom left;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.meetproviders{
+  padding: 50px 0;
+}
+
+.meetproviders h2{
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #03a7a8;
+}
+
+.meetproviders p{
+  font-size: 14px;
+  line-height: 25px;
+  color: #9A9696;
+}
+
+.row-eq-height{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.providers .row-eq-height .col-md-6 div{
+  height: 100%;
+}
+
+.whoweare p{
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.whoweare a{
+  display: inline-block;
+  background: #cc3433;
+  border: 1px solid #cc3433;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.whoweare a:hover{
+  background: none;
+  color: #cc3433;
+}
+
+.carousel-inner .block{
+  margin: 40px 0;
+}
+
+.item .provider-details{
+  background: rgba(3, 167, 168, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 15px 0;
+}
+
+.item .provider-details p{
+  margin: 0;
+}
+
+.item .provider-details p{
+  color: #fff;
+}
+
+.item-item img{
+  border-radius: 10px;
+}
+
+#provider-carousel .carousel-indicators{
+  display: block;
+}
+
+#provider-carousel .carousel-indicators li{
+  border: 1px solid #ccc;
+  background: #ccc;
+  border-radius: 0;
+  height: 5px;
+  width: 80px;
+}
+
+#provider-carousel .carousel-indicators li.active{
+  border: 1px solid #03a7a8;
+  background: #03a7a8;
+  height: 5px;
+  width: 80px;
+  margin: 1px;
+}
+
+#provider-carousel .carousel-indicators{
+  bottom: 0;
+}
 
 @media screen and (max-width: 1300px) {
 
@@ -570,7 +696,65 @@ color: #fff;}
 
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .whoweare {
+    padding: 30px;
+  }
+}
 
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .whoweare {
+    padding: 20px;
+  }
+  .whoweare h1 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .whoweare p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .whoweare a {
+    padding: 5px 20px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .item .provider-details {
+    padding: 5px 0;
+  }
+  .item .provider-details p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .row-eq-height{
+    display: block;
+  }
+  .whoweare {
+    padding: 20px;
+  }
+  .whoweare h1 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .whoweare p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .whoweare a {
+    padding: 5px 20px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  #provider-carousel .item-item{
+    margin-bottom: 20px; 
+  }
+}
 
 
 
